@@ -3,7 +3,7 @@
         <div>
             <Logo />
             <h1 class="title">nuxt-static-firebase-hosting</h1>
-            <h3>Deployment time: Friday January 15, 17:13</h3>
+            <h3>Deployment time: Friday January 15, 17:16</h3>
         </div>
     </div>
 </template>
