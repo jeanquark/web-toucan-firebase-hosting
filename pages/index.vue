@@ -15,6 +15,7 @@
         </section>
 
         <v-container>
+            Monday, January 25th 16:27
             <what-we-do></what-we-do>
         </v-container>
 
