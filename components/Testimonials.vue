@@ -8,7 +8,7 @@
 
                         <v-tab v-for="index in testimonials.length" :key="index" :href="`#tab-${index}`" ripple class="white--text">
                             {{ testimonials[index - 1] ? testimonials[index - 1]['title'] : '' }}
-                            <img :src="`images/testimonials/${testimonials[index - 1]['image-logo']}`" width="40" style="padding: 10px 0px" v-if="testimonials[index - 1]" />
+                            <img :src="`/images/testimonials/${testimonials[index - 1]['image-logo']}`" width="40" style="padding: 10px 0px" v-if="testimonials[index - 1]" />
                         </v-tab>
                     </v-tabs>
 
@@ -17,7 +17,7 @@
                         <v-card flat>
                             <v-row no-gutters v-if="testimonials[index - 1]">
                                 <v-col cols="12" md="4" style="cursor: pointer;">
-                                    <img :src="`images/testimonials/${testimonials[index - 1]['image']}`" width="100%" />
+                                    <img :src="`/images/testimonials/${testimonials[index - 1]['image']}`" width="100%" />
                                 </v-col>
                                 <v-col cols="12" md="8">
                                     <v-card-text style="line-height: 2em; padding: 40px;">

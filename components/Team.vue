@@ -16,7 +16,7 @@
                         <v-row no-gutters align="center">
                             <v-col cols="3">
                                 <v-avatar :size="100" color="grey lighten-4">
-                                    <img :src="`images/teams/${team_members[index - 1]['image']}`" alt="avatar" />
+                                    <img :src="`/images/teams/${team_members[index - 1]['image']}`" alt="avatar" />
                                 </v-avatar>
                             </v-col>
                             <v-col cols="9" style="text-align: center;">
