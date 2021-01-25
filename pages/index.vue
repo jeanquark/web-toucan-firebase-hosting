@@ -1,45 +1,76 @@
 <template>
-    <div class="container">
-        <div>
-            <Logo />
-            <h1 class="title">nuxt-static-firebase-hosting</h1>
-            <h3>Deployment time: Friday January 15, 17:16</h3>
-        </div>
-    </div>
+    <v-main>
+        <section>
+            <v-parallax
+                srcset="/images/image2-800-min.jpg 800w,
+					/images/image2-1200-min.jpg 1200w,
+					/images/image2-1600-min.jpg 1600w,
+					/images/image2-2200-min.jpg 2200w,
+					/images/image2-2600-min.jpg 2600w,
+					/images/image2-3200-min.jpg 3200w"
+                max-height="600"
+                loading="eager"
+                alt="peope working in office (cartoonish)"
+            ></v-parallax>
+        </section>
+
+        <v-container>
+            <what-we-do></what-we-do>
+        </v-container>
+
+        <section>
+            <v-lazy>
+                <v-parallax
+                    srcset="/images/image3-800-min.jpg 800w,
+						/images/image3-1200-min.jpg 1200w,
+						/images/image3-1600-min.jpg 1600w,
+						/images/image3-2200-min.jpg 2200w,
+						/images/image3-2600-min.jpg 2600w,
+						/images/image3-3200-min.jpg 3200w"
+                    height="380"
+                    loading="lazy"
+                    alt="people around desk in office (cartoonish)"
+                ></v-parallax>
+            </v-lazy>
+        </section>
+
+        <section>
+            <our-packages></our-packages>
+        </section>
+
+        <section>
+            <testimonials></testimonials>
+        </section>
+        <section>
+            <v-row no-gutters justify="center" class="mb-5">
+                <team></team>
+                <contact></contact>
+            </v-row>
+        </section>
+    </v-main>
 </template>
 
 <script>
-export default {}
+import WhatWeDo from '~/components/WhatWeDo.vue'
+import OurPackages from '~/components/Packages.vue'
+import Testimonials from '~/components/Testimonials.vue'
+import Team from '~/components/Team.vue'
+import Contact from '~/components/Contact.vue'
+
+export default {
+    components: {
+        WhatWeDo,
+        OurPackages,
+        Testimonials,
+        Team,
+        Contact,
+    },
+    data() {
+        return {}
+    },
+    computed: {
+    },
+}
 </script>
 
-<style>
-.container {
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.title {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 100px;
-    color: #35495e;
-    letter-spacing: 1px;
-}
-
-.subtitle {
-    font-weight: 300;
-    font-size: 42px;
-    color: #526488;
-    word-spacing: 5px;
-    padding-bottom: 15px;
-}
-
-.links {
-    padding-top: 15px;
-}
-</style>
+<style scoped></style>
