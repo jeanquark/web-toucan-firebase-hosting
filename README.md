@@ -7,4 +7,4 @@ Hosted on Firebase. Visit [here](https://console.firebase.google.com/u/0/project
 # generate static project
 $ npm run generate
 ```
-GitHub Actions will automatically push the code to firebase server.
+GitHub Actions will automatically push the code to the firebase server.
