@@ -94,9 +94,17 @@ export default {
 				langDir: 'lang/',
 				defaultLocale: 'en',
 				seo: false
-			}
-		]
+			},
+		],
+		'@nuxtjs/recaptcha',
 	],
+	recaptcha: {
+        hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+        // language: 'en',   // Recaptcha language (v2)
+        siteKey: '6LfQ21cfAAAAAA7315I17B26n4vSVXKzck4m4hjN', // Site key for requests
+        version: 2, // Version
+        // size: 'normal'
+    },
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
 	build: {
